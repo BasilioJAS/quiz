@@ -11,5 +11,8 @@ exports.answer = function (req, res){
 	}else{
 		res.render('quizes/answer', {respuesta: 'Incorrecto', title: 'Quiz' });
 	}
-
+};
+//GET /author
+exports.author = function (req, res){
+	res.render('author', {title: "author"});
 };
